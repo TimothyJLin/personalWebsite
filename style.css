@@ -3,12 +3,13 @@ body {
     margin: 0; 
 }
 /*id*/
+
 #topBorder {
-    width:100%;
+    width:70%;
     height:15%;
     background-color:rgb(37, 152, 46);
     font-size:400%;
-    display:grid;
+    display:inline-block;
     place-items:center;
 }
 
@@ -18,6 +19,16 @@ body {
     background-color:rgb(37, 152, 46);
     font-size:200%;
     position:absolute; bottom:0;
+}
+
+#aboutMe {
+    width:30%;
+    height:15%;
+    background-color:rgb(37, 152, 46);
+    font-size:200%;
+    display:inline-block;
+    position:absolute; top:0;
+
 }
 
 #bottomBorderFirstRow {
@@ -31,6 +42,11 @@ body {
 
 
 /*class*/
+
+.button {    
+    height:50%;
+    width: 50%;
+}
 .center {
     margin: auto;
     text-align:center;
