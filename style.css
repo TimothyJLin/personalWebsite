@@ -10,7 +10,7 @@ body {
     background-color:rgb(37, 152, 46);
     font-size:400%;
     display:inline-block;
-    place-items:center;
+    text-align:right;
 }
 
 #bottomBorder {
@@ -22,12 +22,24 @@ body {
 }
 
 #aboutMe {
-    width:30%;
+    width:15%;
     height:15%;
     background-color:rgb(37, 152, 46);
     font-size:200%;
     display:inline-block;
     position:absolute; top:0;
+    text-align:right;
+
+}
+
+#login {
+    width:15%;
+    height:15%;
+    background-color:rgb(37, 152, 46);
+    font-size:200%;
+    display:inline-block;
+    position:absolute; right:0;
+    text-align:right;
 
 }
 
@@ -44,12 +56,30 @@ body {
 /*class*/
 
 .button {    
-    height:50%;
-    width: 50%;
+    height:80%;
+    width: 80%;
+    font-size:100%;
+    background-color:rgb(37, 152, 46);
 }
 .center {
     margin: auto;
     text-align:center;
+}
+
+.center-middle {
+    display:grid;
+    justify-content: center;
+    align-items:center;
+}
+
+.input {
+    display:flex;
+}
+
+.full-screen {
+    height:100%;
+    width:100%;
+
 }
 
 .right-align {
