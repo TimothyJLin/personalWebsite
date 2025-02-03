@@ -1,20 +1,22 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css"></link>
+        <link rel="stylesheet" href="../static/css/style.css"></link>
+        <script src="./../static/js/login.js"></script>
     </head>
     <body>
         <div class="full-screen center-middle">
             <div>
                 <div>
                     <b>Username:</b>
-                    <input class="input"></input>
+                    <input id=usernameID class="input"></input>
                 </div>
                 <div>
                     <b>Password:</b>
-                    <input type="password" class="input"></input>
+                    <input id=passwordID type="password" class="input"></input>
                 </div>
                 <div>
-                    <button>SUBMIT</button>
+                    <button onclick="login()">SUBMIT</button>
+                    <a href="./create-account">Create account!</a>
                 </div>
             </div>
         </div>

@@ -13,3 +13,13 @@ def login():
     else:
         return "error, wrong fetch type"
 
+@app.route('/create-account', methods = ['GET', 'POST'])
+def createAccount():
+    if request.method == 'POST' or request.method == 'GET':
+        return render_template('create-account.html')
+    else:
+        return "error, wrong fetch type"
+
+
+if __name__ == '__main__':
+    app.run(debug=True) 
