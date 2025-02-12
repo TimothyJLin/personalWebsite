@@ -10,8 +10,10 @@ def connect():
         #sensitive data here to be on a hidden file
   )
 def attemptLogIn(username, password):
+    connect()
     pass
     
 
 def storeCreatedAccount(username, password):
+    connect()
     pass

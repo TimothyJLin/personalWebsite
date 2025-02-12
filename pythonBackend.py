@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template
+import pythonBackend
 
 app=Flask(__name__)
 
@@ -10,6 +11,15 @@ def index():
 def login():
     if request.method == 'POST' or request.method == 'GET':
         return render_template('login.html')
+    else:
+        return "error, wrong fetch type"
+    
+@app.route('/login/validation', methods = ['GET', 'POST'])
+def login():
+    if request.method == 'POST' or request.method == 'GET':
+        pass
+    
+        #pythonBackend.attemptLogIn("username", "password")
     else:
         return "error, wrong fetch type"
 
