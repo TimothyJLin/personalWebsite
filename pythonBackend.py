@@ -15,10 +15,10 @@ def login():
     else:
         return "error, wrong fetch type"
     
-@app.route('/login/validation', methods = ['GET', 'POST'])
+@app.route('/validation', methods = ['GET', 'POST'])
 def validation():
     if request.method == 'POST' or request.method == 'GET':
-        SQLCaller.attemptLogIn()
+        SQLCaller.attemptLogIn("test", "test")
     
         #pythonBackend.attemptLogIn("username", "password")
     else:
