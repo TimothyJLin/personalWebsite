@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template
+import SQLCaller
 #import pythonBackend
 
 app=Flask(__name__)
@@ -17,7 +18,7 @@ def login():
 @app.route('/login/validation', methods = ['GET', 'POST'])
 def validation():
     if request.method == 'POST' or request.method == 'GET':
-        pass
+        SQLCaller.attemptLogIn()
     
         #pythonBackend.attemptLogIn("username", "password")
     else:
