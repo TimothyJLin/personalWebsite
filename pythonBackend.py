@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import pythonBackend
+#import pythonBackend
 
 app=Flask(__name__)
 
@@ -15,7 +15,7 @@ def login():
         return "error, wrong fetch type"
     
 @app.route('/login/validation', methods = ['GET', 'POST'])
-def login():
+def validation():
     if request.method == 'POST' or request.method == 'GET':
         pass
     
